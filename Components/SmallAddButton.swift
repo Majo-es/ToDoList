@@ -1,5 +1,5 @@
 //
-//  SmallAddButton.swift
+//  TaskRow.swift
 //  To Do List
 //
 //  Created by Majo on 9/5/23.
@@ -7,23 +7,23 @@
 
 import SwiftUI
 
-struct SmallAddButton: View {
+struct TaskRow: View {
+    var task: String
+    var completed: Bool
+    
     var body: some View {
-        ZStack{
-            Circle()
-                .frame(width:50)
-                .foregroundColor(Color(hue: 0.627, saturation:0.632, brightness:0.924))
-            Text("+")
-                .font(.title)
-                .fontWeight(.heavy)
-                .foregroundColor(.white)
+        
+        //HStack: A view that arranges its subviews in a horizontal line.
+        HStack(spacing:20){
+            Image(systemName: completed ? "checkmark.circle": "circle")
+            Text(task)
+            
         }
-        .frame(height: 50)
     }
 }
 
-struct SmallAddButton_Previews: PreviewProvider {
+struct TaskRow_Previews: PreviewProvider {
     static var previews: some View {
-        SmallAddButton()
+        TaskRow(task: "Study for quiz", completed: true)
     }
 }
