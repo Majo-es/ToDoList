@@ -10,6 +10,7 @@ import SwiftUI
 struct TaskRow: View {
     var task: String
     var completed: Bool
+    
     var body: some View {
         
         //HStack: A view that arranges its subviews in a horizontal line.
