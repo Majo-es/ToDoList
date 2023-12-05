@@ -1,5 +1,5 @@
-> # ToDoList
-> <blockquote> The To-Do List App is a simple and easy-to-use app that helps you keep track of your tasks. @DesignCode </blockquote>
+# ToDoList
+<blockquote> The To-Do List App is a simple and easy-to-use app that helps you keep track of your tasks. @DesignCode </blockquote>
 
 ## Project Overview
 The To-Do List App allows the user to create, edit, and delete tasks. The app is designed to be simple and easy to use, so the user can focus on getting things done.
